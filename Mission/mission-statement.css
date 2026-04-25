@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#content {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+hr{
+    height: 1px;
+    background-color: #f4f4f4;
+    width: 80%;
+}
+
+h3{
+    color: #035f9c;
+    text-align: center;
+}
+
+#ital{
+    font-style: italic;
+    text-align: left;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#topics {
+    width: 95%; 
+    margin: 0 auto; 
+    line-height: 1.5em;
+}
+
+#lists{
+    margin-left: 10%;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 20%
+}
