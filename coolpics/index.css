@@ -92,6 +92,12 @@ footer {
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     nav {
         display: block;
     }
@@ -101,10 +107,5 @@ footer {
     }
     .menu-btn {
         display: none;
-    }
-}
-@media screen and (min-width: 1000px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
