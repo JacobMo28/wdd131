@@ -28,8 +28,8 @@ function sectionTemplate(section) {
 }
 
 function renderSections(sections) {
-const html = sections.map(sectionTemplate);
-document.querySelector("#sections").innerHTML = html.join("");
+  const html = sections.map(sectionTemplate);
+  document.querySelector("#sections").innerHTML = html.join("");
 }
 
 renderSections(aCourse.sections);
