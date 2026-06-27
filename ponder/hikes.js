@@ -85,7 +85,7 @@ function search() {
         return (
             hike.name.toLowerCase().includes(hikeQuery.toLowerCase()) ||
             hike.description.toLowerCase().includes(hikeQuery.toLowerCase()) ||
-            hike.tags.find(tag => tag.toLowerCase().includes(hikeQuery.toLowerCase))
+            hike.tags.find(tag => tag.toLowerCase().includes(hikeQuery.toLowerCase()))
         );
     })
 
