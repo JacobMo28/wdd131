@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Connect 4 - Site Plan</h1>
+			<h2>Jacob Mo</h2>
+			<h2>WDD 131-[section]</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			<!-- ------------------------Steps 2-3------------------------------ -->
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The purpose of this website is to create a Connect 4 recreation using HTML, JS, and CSS. The game will be local 2 player multiplayer just like if you were playing the real game.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The main audience is for people who like to play popular table top games looking to have some fun with their friend.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>In order to have a working game of connect 4, you need to use JS. The elements that will use JS in my project will be:</p>
+			<p>	Board columns - Player selects what column they want to place their piece in</p>
+			<p>	The pieces - Will automatically show up in the approraite place in the column where the user selected</p>
+			<p>Array - I will use a array to keep track the state of the board</p>
+			<p>Detect win state - Script will constantly check for if their is a win condition on the board</p>
+			
+			<h3>Psuedocode</h3>
+			<p>Player one's turn first, alternate variable between 1 and -1 to determine whos turn it is.</p>
+			<p>Board is a 7 by 6 grid. Each Column is able to detect a click. When user clicks column, get index for what column, and search the board array for that index. Each index returns in order what pieces are in that column, and it will find the next open space to place the piece. Whatever coordinate is returned, the color is changed to the players color.
+			</p>
+			<p>After every move, the script will look for a win condition. this will be a function that will return true if the users last move created a win condition. To start, the program will use the users last move as the starting point. The program will then check each axis for if theres any pieces in succession and add 1 to the counter. If counter reaches four that means there was 4 in a row on that axis so that player won.</p>
+			<p></p>
+			<p>If function returns false, that means no one has won, so we multiple the turn variable by -1 to make it the other players turn.</p>
+			<p>If the reset button is clicked, reset array back to all 0's.</p>
+
+
+
+		
+			<h2>Style Guide</h2>
+
+			<!-- ------------------------Steps 4-8------------------------------ -->
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#396E94]</td>
+						<td class="secondary">[#E7C24F]</td>
+						<td class="accent1">[#A43312]</td>
+						<td class="accent2"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>Wireframes</h2>
+			<p>	
+				<img id="wireframe" src="Screenshot 2026-07-01 203722.png">
+			</p>
+		</main>
+	</body>
+</html>
