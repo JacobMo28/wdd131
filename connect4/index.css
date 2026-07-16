@@ -1,0 +1,102 @@
+/* div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+} */
+html, body{
+    background-color: black;
+    margin: 0;
+    /* height: 100% */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img{
+    max-height: 80px;
+    /* margin: 0px, 0px; */
+}
+
+#board{
+    display: flex;
+    background-color: white;
+    width: 590px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#game{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    /* border-radius: 10%; */
+}
+
+.item{
+    width: 63px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+
+}
+
+.column{
+    width: 80px;
+    height: 490px;
+    /* background-color: rgba(255, 255, 255, 0.212); */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+h1, h2, p{
+    color: white;
+}
+h1{
+    margin: 15px 0 5px;
+}
+h2{
+    margin: 5px, 0;
+}
+p{
+    margin: 5px 0;
+}
+#restart{
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+}
+
+#status {
+    color: white;
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    #game{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #board{
+        width: 95vw;
+    }
+    .column{
+        width: calc(95vw / 7);
+        height: calc(95vw / 7 * 6);
+    }
+    .item{
+        width: 80%;
+        height: 80%;
+        margin: 5%;
+    }
+}
